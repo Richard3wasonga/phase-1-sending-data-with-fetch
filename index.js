@@ -6,7 +6,10 @@ function submitData (name, email){
             "Content-Type" : "application/json",
             "Accept" : "application/json",
         },
-        body: JSON.stringify({name, email}),
+        body: JSON.stringify({
+            name : "Steve",
+            email: "steve@steve.com",
+        }),
     })
     .then(function (response){
         return response.json();
